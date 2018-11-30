@@ -8,7 +8,7 @@
   var device;
 
   log('Requesting Capability Token...');
-  $.getJSON('https://cordovan-angelfish-2789.twil.io/capability-token')
+  $.getJSON('https://amaranth-lion-1691.twil.io/capability-token')
     .then(function (data) {
       log('Got a token.');
       console.log('Token: ' + data.token);
@@ -48,7 +48,13 @@
         document.getElementById('button-answer').style.display = 'inline';
         document.getElementById('button-call').style.display = 'none';
         document.getElementById('phone-number').style.display = 'none';
+      });
 
+      device.on('cancel', function(conn) {
+        log("Incoming connection canceled");
+        document.getElementById('button-answer').style.display = 'none';
+        document.getElementById('button-call').style.display = 'inline';
+        document.getElementById('phone-number').style.display = 'inline';
       });
 
       setClientNameUI(data.identity);
