@@ -2,7 +2,7 @@
   <img src="https://static0.twilio.com/marketing/bundles/marketing/img/logos/wordmark-red.svg" alt="Twilio" width="250" />
 </a>
 
-This demo is built to demo the feature of Twilio WebRTC, and we built on top of the official sample, https://github.com/TwilioDevEd/client-quickstart-js.
+This demo is built to demo the feature of Twilio WebRTC, and is built on top of the official sample, https://github.com/TwilioDevEd/client-quickstart-js.
 
 ## Setting up a local HTTP server
 
